@@ -27,6 +27,7 @@ const config = {
         foreground: "hsl(var(--foreground))",
         brown: {
           200: "#e5ccb2",
+          300: "#c6a686",
           400: "#a0522d",
           500: "#8B4513",
           600: "#654321",

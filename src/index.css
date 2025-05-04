@@ -94,4 +94,48 @@
       transform: translateY(-10px);
     }
   }
+  
+  .animate-shake {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+  }
+  
+  @keyframes shake {
+    10%, 90% { transform: translate3d(-1px, 0, 0); }
+    20%, 80% { transform: translate3d(2px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+    40%, 60% { transform: translate3d(4px, 0, 0); }
+  }
+  
+  .animate-fly-1 {
+    animation: fly1 15s infinite linear;
+  }
+  
+  .animate-fly-2 {
+    animation: fly2 20s infinite linear;
+  }
+  
+  .animate-fly-3 {
+    animation: fly3 12s infinite linear;
+  }
+  
+  @keyframes fly1 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(100px, 50px) rotate(90deg); }
+    50% { transform: translate(0, 100px) rotate(180deg); }
+    75% { transform: translate(-100px, 50px) rotate(270deg); }
+    100% { transform: translate(0, 0) rotate(360deg); }
+  }
+  
+  @keyframes fly2 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(-120px, 80px) rotate(120deg); }
+    66% { transform: translate(80px, -60px) rotate(240deg); }
+    100% { transform: translate(0, 0) rotate(360deg); }
+  }
+  
+  @keyframes fly3 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(150px, -70px) rotate(180deg); }
+    100% { transform: translate(0, 0) rotate(360deg); }
+  }
 }
